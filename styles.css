@@ -1,0 +1,138 @@
+
+
+/*
+Setjum inn „reset“ sem fjarlægir margin og padding af öllu
+Þessu má ekki breyta
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reiknum stærð á öllum boxum sem border-box.
+Þessu má breyta eða fjarlægja.
+*/
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+/* og látum erfast á allt */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* hjálpar class sem felur sjónrænt en skjálesarar lesa */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+/* Uppsetning á síðu—layout */
+.content {
+  /* Lætur börn .content raða sér með _flexbox_ */
+  display: flex;
+  /* röðun sé í dálkaröð (niður) */
+  flex-direction: column;
+}
+
+.content > header {
+    background-color: #00BFFF;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.content > nav {
+}
+
+.content > main {
+  /* Lætur <main> taka allt auka pláss sem er í boði */
+  flex: 1;
+  display: block;
+  margin: 0 auto;
+}
+
+.content > footer {
+    background-color: #00BFFF;
+    padding: 25px 0;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* almennar skilgreiningar */
+
+h1, h2 {
+  /* TODO setja almennar skilgreinar fyrir fyrirsagnir */
+}
+p {
+    padding-bottom: 10px;
+}
+a {
+  /* TODO setja almennar skilgreinar fyrir tengla */
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+/* nav — valmynd */
+
+nav ul {
+  /* TODO */
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  /* TODO */
+  float: left;
+  padding-right: 20px;
+  font-size: 24px;
+}
+
+/* TODO */
+
+
+/* main — meginmál */
+
+/* TODO */
+
+/* töflur */
+
+table {
+  border-spacing: 0;
+}
+
+fieldset {
+    border:1px solid #00BFFF;
+  }
+  legend {
+    color: black;
+    font-size: 22px;
+    margin-left: 30px;
+  }
+  legend:before {
+    position: absolute;
+    border-left: 1px solid #00BFFF;
+  }
+  legend:after {
+    position: absolute;
+    border-right: 1px solid #00BFFF;
+  }
+/* TODO */
+
+/* form */
+
+/* TODO */

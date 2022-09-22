@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8" />
+    <title>Könnun</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <element class="content">
+        <header>Könnun um forritun</header>
+    </element>
+    <element class="content">
+        <main>
+        <element class="nav">
+            <nav>
+            <ul>
+                <li><a href="../index.html" >Forsíða</a></li>
+                <li><a href="../sidur/um.html">Um forrit og forritun </a></li>
+                <li><a class="active" href="../sidur/konnun.html">Könnun um forritun </a></li>
+                <li><a href="../sidur/baekur.html">Bækur um forritun </a> </li>
+            </ul>
+            </nav>
+        </element>
+
+        <form action="/skraning" method="post">
+            <fieldset>
+                <legend>Reynsla af forritun</legend>
+                <br>
+                <div>
+                    <label>
+                        Forritunarmál sem ég kann best:<br>
+                        <select>
+                            <option>-Velja forritunarmál-</option>
+                            <option>Python</option>
+                            <option>C++</option>
+                            <option>Java</option>
+                            <option>C</option>
+                            <option>C#</option>
+                            <option>PHP</option>
+                            <option>R</option>
+                            <option>JavaScript</option>
+                            <option>Go</option>
+                            <option>Assembly</option>
+                            <option>Matlab</option>
+                            <option>Scala</option>
+                            <option>Ruby</option>
+                            <option>HTML</option>
+                            <option>Arduino</option>
+                            <option>Shell</option>
+                            <option>Perl</option>
+                            <option>Swift</option>
+                            <option>Objective-C</option>
+                            <option>Lua</option>
+                            <option>Fortran</option>
+                            <option>SQL</option>
+                        </select>
+                    </label>
+                </div>
+                <br>
+
+                <div>
+                    <label>Hversu vel kanntu forritunarmálið á skalanum 0-10?:</label><br>
+                    <label>
+                        <input name="nps" type="radio" value="0">0
+                    </label>
+
+                    <label>
+                        <input name="nps" type="radio" value="1">1
+                    </label>
+
+                    <label>
+                        <input name="nps" type="radio" value="2">2
+                    </label>
+
+                    <label>
+                        <input name="nps" type="radio" value="3">3
+                    </label>
+
+                    <label>
+                        <input name="nps" type="radio" value="4">4
+                    </label>
+
+                    <label>
+                        <input name="nps" type="radio" value="5">5
+                    </label>
+
+                    <label>
+                        <input name="nps" type="radio" value="6">6
+                    </label>
+
+                    <label>
+                        <input name="nps" type="radio" value="7">7
+                    </label>
+
+                    <label>
+                        <input name="nps" type="radio" value="8">8
+                    </label>
+
+                    <label>
+                        <input name="nps" type="radio" value="9">9
+                    </label>
+
+                    <label>
+                        <input name="nps" type="radio" value="10">10
+                    </label>
+                </div>
+                <br>
+
+
+                <div>
+                    <label>Hvað finnst þér best við forritunarmálið?:</label><br>
+                    <textarea name="comment"></textarea>
+                </div>
+                <br>
+
+                <div>
+                    <label>Hvað finnst þér verst við forritunarmálið?:</label><br>
+                    <textarea name="comment"></textarea>
+                </div>
+                <br>
+
+                <div>
+                    Dæmi um forrit<br>
+                    <input type="file" name="file">
+                </div>
+                <br>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Forritunarmál sem mig langar að læra</legend>
+                <br>
+                <div>
+                    <label>
+                        Forritunarmál sem mig langar að læra<br>
+                        <select required multiple>
+                            <option>-Velja forritunarmál-</option>
+                            <option>Python</option>
+                            <option>C++</option>
+                            <option>Java</option>
+                            <option>C</option>
+                            <option>C#</option>
+                            <option>PHP</option>
+                            <option>R</option>
+                            <option>JavaScript</option>
+                            <option>Go</option>
+                            <option>Assembly</option>
+                            <option>Matlab</option>
+                            <option>Scala</option>
+                            <option>Ruby</option>
+                            <option>HTML</option>
+                            <option>Arduino</option>
+                            <option>Shell</option>
+                            <option>Perl</option>
+                            <option>Swift</option>
+                            <option>Objective-C</option>
+                            <option>Lua</option>
+                            <option>Fortran</option>
+                            <option>SQL</option>
+                        </select>
+                    </label>
+                </div>
+                <br>
+
+                <div>
+                    <label>
+                        Hvers vegna langar þig að læra þetta forritunarmál<br>
+                        <select>
+                            <option>-Veldu úr listanum-</option>
+                            <option>Vegna vinnu</option>
+                            <option>Fyrir akademísk störf</option>
+                            <option>Forvitni</option>
+                        </select>
+                    </label>
+                </div>
+                <br>
+
+                <div>
+                    <label>Annað:</label><br>
+                    <textarea name="comment"></textarea>
+                </div>
+                <br>
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Hafa samband</legend>
+                <div>
+                    <label>
+                        <input name="register" type="checkbox">Það má hafa samband við mig
+                    </label>
+                </div>
+                <br>
+
+                <div>
+                    <label>
+                        Netfang: <input type="email" id="email" required>
+                    </label>
+                </div>
+                <br>
+
+                <div>
+                    <label>
+                        Símanúmer: <input type="text" id="phone"  placeholder="000-0000" maxlength="8">
+                    </label>
+                </div>
+            </fieldset>
+            <br>
+
+            <button type="reset">Byrja upp á nýtt</button>
+            <button type="submit">Senda</button>
+        </form>
+
+        <element class="content">
+            <footer>
+                <a href="../index.html" >Aftur á forsíðu</a>
+            </footer>
+        </element>
+    </main>
+
+  </body>
+</html>
